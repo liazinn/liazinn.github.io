@@ -1,3 +1,8 @@
+/*
+This file is licensed under the MIT License
+See LICENSE-MIT for details
+*/
+
 // lazyload
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

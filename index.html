@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html class="scroll-smooth scrollbar-hide">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Lia Zinngrebe: Personal Website">
-        <meta name="author" content="Lia Zinngrebe">
-        <meta name="keywords" content="Urban Planning, Urban Design, Inclusive Planning, Gender-Sensitive Planning, Participation, Participatory Urbanism, Mobility Planning, Public Urban Spaces, Inclusive Urban Spaces, Data-Driven Urbanism, Need-Oriented Urbanism">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lia Zinngrebe</title>
-        <link rel="shortcut icon" type="image/x-icon" href="lz.ico">
-        <!-- css -->
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- p5.js -->
-        <script src="scripts/p5.min.js"></script>
-        <script src="scripts/sketch.js"></script>
-    </head>
 
-    <body class="font-mono">
-        <header class="fixed w-screen">
-            <nav class="flex flex-row justify-between my-6 mx-20">
-                <ul class="flex flex-row justify-start text-center space-x-6 items-center">
-                    <li>
-                        <a class="hover:text-[#EBCA59] duration-500" href="#">Lia Zinngrebe</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-[#EBCA59] duration-500" href="https://www.hercityweimar.eu" target="_blank">HerCity Weimar</a>
-                    </li>
-                </ul>
-                <ul class="flex flex-row justify-start text-center space-x-6 items-center">
-                    <li>
-                        <a class="fill-black hover:fill-[#EBCA50] duration-500" href="https://www.linkedin.com/in/liazinngrebe/" target="_blank"><svg class="h-[17.5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
-                    </li>
-                    <li>
-                        <a class="fill-black hover:fill-[#EBCA50] duration-500" href="https://www.instagram.com/hercityweimar/" target="_blank"><svg class="h-[17.5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.45 838.45"><path d="m0,257.39v323.67c0,141.92,115.46,257.39,257.39,257.39h323.67c141.92,0,257.39-115.46,257.39-257.39v-323.67C838.45,115.46,722.99,0,581.06,0h-323.67C115.46,0,0,115.46,0,257.39h0Zm83.43,11.47c0-102.24,83.18-185.43,185.43-185.43h300.73c102.24,0,185.42,83.18,185.42,185.43v300.73c0,102.24-83.18,185.42-185.42,185.42h-300.73c-102.24,0-185.43-83.18-185.43-185.42v-300.73Zm220.82,150.37c0,63.4,51.58,114.97,114.97,114.97s114.97-51.58,114.97-114.97-51.58-114.97-114.97-114.97-114.97,51.58-114.97,114.97Zm-76,0c0-105.31,85.67-190.98,190.98-190.98s190.98,85.67,190.98,190.98-85.67,190.98-190.98,190.98-190.98-85.67-190.98-190.98h0Zm406.04-267.15c27.02,0,48.92,21.9,48.92,48.92s-21.9,48.92-48.92,48.92-48.92-21.9-48.92-48.92,21.9-48.92,48.92-48.92h0Z"/></svg></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="fixed bottom-0 right-6 bg-slate-400 bg-cover bg-no-repeat bg-center px-48 py-80 lazy" data-src="imgs/01_flower_low.jpg" style="background-image: url(imgs/01_flower.jpg);"></div>
-            <div class="h-screen flex flex-auto items-center">
-                <div class="grid grid-cols-6 gap-6 text-start p-20">
-                    <div class="col-span-1 bg-cover bg-no-repeat bg-center rounded overflow-hidden aspect-[10/16] lazy" data-src="imgs/00_lz.jpg" style="background-image: url(imgs/00_lz.jpg);"></div>
-                    <div class="col-span-2 text-xs text-pretty">Lia Zinngrebe is an architect and urban planner engaged in public space, mobility, and participation with <span class="underline hover:text-[#EBCA59] duration-500"><a href="https://www.urbanista.ch" target="_blank">urbanista.ch</a></span> in Zurich. She completed her architectural studies focusing on urban planning in Münster and Weimar. Within her master's thesis, she founded the participatory project <span class="underline hover:text-[#EBCA59] duration-500"><a href="https://www.hercityweimar.eu" target="_blank">HerCity Weimar</a></span>, where she examined the local urban space from a gender-sensitive perspective. Her professional journey has encompassed roles in urban design firms across Germany and Denmark, including <span class="underline hover:text-[#EBCA59] duration-500"><a href="https://www.gehlpeople.com" target="_blank">Gehl Architects</a></span> in Copenhagen. Lia is committed to a people-first approach, emphasizing data-driven and need-oriented methodologies. She has shared her expertise on inclusive urban planning through lectures and panel discussions.</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lia Zinngrebe: Personal Website">
+    <meta name="author" content="Lia Zinngrebe">
+    <meta name="keywords"
+        content="Urban Planning, Urban Design, Inclusive Planning, Gender-Sensitive Planning, Participation, Participatory Urbanism, Mobility Planning, Public Urban Spaces, Inclusive Urban Spaces, Data-Driven Urbanism, Need-Oriented Urbanism">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia Zinngrebe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="lz.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- p5.js -->
+    <script src="scripts/p5.min.js"></script>
+    <script src="scripts/sketch.js"></script>
+</head>
+
+<body class="font-mono">
+    <header class="fixed w-screen">
+        <nav class="flex flex-row justify-between my-6 mx-20">
+            <ul class="flex flex-row justify-start text-center space-x-6 items-center">
+                <li>
+                    <a class="hover:text-[#EBCA59] duration-500" href="#">Lia Zinngrebe</a>
+                </li>
+                <li>
+                    <a class="hover:text-[#EBCA59] duration-500" href="https://www.hercityweimar.eu"
+                        target="_blank">HerCity Weimar</a>
+                </li>
+            </ul>
+            <ul class="flex flex-row justify-start text-center space-x-6 items-center">
+                <li>
+                    <a class="fill-black hover:fill-[#EBCA50] duration-500"
+                        href="https://www.linkedin.com/in/liazinngrebe/" target="_blank"><svg class="h-[17.5px]"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg></a>
+                </li>
+                <li>
+                    <a class="fill-black hover:fill-[#EBCA50] duration-500"
+                        href="https://www.instagram.com/hercityweimar/" target="_blank"><svg class="h-[17.5px]"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.45 838.45">
+                            <path
+                                d="m0,257.39v323.67c0,141.92,115.46,257.39,257.39,257.39h323.67c141.92,0,257.39-115.46,257.39-257.39v-323.67C838.45,115.46,722.99,0,581.06,0h-323.67C115.46,0,0,115.46,0,257.39h0Zm83.43,11.47c0-102.24,83.18-185.43,185.43-185.43h300.73c102.24,0,185.42,83.18,185.42,185.43v300.73c0,102.24-83.18,185.42-185.42,185.42h-300.73c-102.24,0-185.43-83.18-185.43-185.42v-300.73Zm220.82,150.37c0,63.4,51.58,114.97,114.97,114.97s114.97-51.58,114.97-114.97-51.58-114.97-114.97-114.97-114.97,51.58-114.97,114.97Zm-76,0c0-105.31,85.67-190.98,190.98-190.98s190.98,85.67,190.98,190.98-85.67,190.98-190.98,190.98-190.98-85.67-190.98-190.98h0Zm406.04-267.15c27.02,0,48.92,21.9,48.92,48.92s-21.9,48.92-48.92,48.92-48.92-21.9-48.92-48.92,21.9-48.92,48.92-48.92h0Z" />
+                        </svg></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="fixed bottom-0 right-6 bg-slate-400 bg-cover bg-no-repeat bg-center px-48 py-80 lazy"
+            data-src="imgs/01_flower_low.jpg" style="background-image: url(imgs/01_flower.jpg);"></div>
+        <div class="h-screen flex flex-auto items-center">
+            <div class="grid grid-cols-6 gap-6 text-start p-20">
+                <div class="col-span-1 bg-cover bg-no-repeat bg-center rounded overflow-hidden aspect-[10/16] lazy"
+                    data-src="imgs/00_lz.jpg" style="background-image: url(imgs/00_lz.jpg);"></div>
+                <div class="col-span-2 text-xs text-pretty">Lia Zinngrebe is an architect and urban planner engaged in
+                    public space, mobility, and participation with <span
+                        class="underline hover:text-[#EBCA59] duration-500"><a href="https://www.urbanista.ch"
+                            target="_blank">urbanista.ch</a></span> in Zurich. She completed her architectural studies
+                    focusing on urban planning in Münster and Weimar. Within her master's thesis, she founded the
+                    participatory project <span class="underline hover:text-[#EBCA59] duration-500"><a
+                            href="https://www.hercityweimar.eu" target="_blank">HerCity Weimar</a></span>, where she
+                    examined the local urban space from a gender-sensitive perspective. Her professional journey has
+                    encompassed roles in urban design firms across Germany and Denmark, including <span
+                        class="underline hover:text-[#EBCA59] duration-500"><a href="https://www.gehlpeople.com"
+                            target="_blank">Gehl Architects</a></span> in Copenhagen. Lia is committed to a people-first
+                    approach, emphasizing data-driven and need-oriented methodologies. She has shared her expertise on
+                    inclusive urban planning through lectures and panel discussions.</div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed bottom-0 left-0 w-full mx-auto text-[8px] font-thin">
+        <div class="flex flex-row justify-left pt-24 py-6 px-20">
+            <main>
+                <div class="fixed bottom-5"></div>
+                <div class="grid grid-cols-3 gap-5 text starts p-20">
+                    <div class="col-span-2 text-xs text text-pretty">Lia Zinngrebe is an architect and urban planner.
+                    </div>
                 </div>
+            </main>
+            <!-- credits -->
+            <div class="text-slate-400">Made with
+                <span class="text-[#EBCA59] animate-pulse">&#9829;</span>
+                <span class="">by Dominik Reisach</span>
+                <span class="">&#169; 2024</span>
             </div>
-        </main>
-        <footer class="fixed bottom-0 left-0 w-full mx-auto text-[8px] font-thin">
-            <div class="flex flex-row justify-left pt-24 py-6 px-20">
-        <main>
-            <div class="fixed bottom-5"></div>
-            <div class="grid grid-cols-3 gap-5 text starts p-20">
-                <div class="col-span-2 text-xs text text-pretty">Lia Zinngrebe is an architect and urban planner.</div>
-            </div>
-        </main>
-                <!-- credits -->
-                <div class="text-slate-400">Made with 
-                    <span class="text-[#EBCA59] animate-pulse">&#9829;</span>
-                    <span class="">by Dominik Reisach</span>
-                    <span class="">&#169; 2024</span>
-                </div>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
