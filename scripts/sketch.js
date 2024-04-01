@@ -25,6 +25,8 @@ function setup()
     for (let i = 0; i < num; i++) {
         circles[i] = new Circle();
     }
+
+    describe('A dark-green canvas with bubbles in changing shades of lighter green that move like in a lava lamp affected by time.');
 }
 
 function draw()
