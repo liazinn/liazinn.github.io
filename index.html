@@ -28,9 +28,9 @@
 </head>
 
 <body class="font-mono text-[#FBD3E4]">
-    <header class="fixed w-screen">
-        <nav class="flex flex-row justify-between my-6 mx-20">
-            <ul class="flex flex-row justify-start text-center space-x-6 items-center">
+    <header class="w-screen">
+        <nav class="flex flex-row justify-between my-6 mx-6 md:mx-20">
+            <ul class="flex flex-col sm:flex-row justify-start space-y-3 sm:space-y-0 sm:space-x-7">
                 <li>
                     <a class="hover:text-[#4A7B65] duration-500" href="#">Lia Zinngrebe</a>
                 </li>
@@ -39,7 +39,7 @@
                         target="_blank">HerCity Weimar</a>
                 </li>
             </ul>
-            <ul class="flex flex-row justify-start text-center space-x-6 items-center">
+            <ul class="flex flex-row justify-start space-x-7">
                 <li>
                     <a class="fill-[#FBD3E4] hover:fill-[#4A7B65] duration-500"
                         href="https://www.linkedin.com/in/liazinngrebe/" target="_blank"><svg class="h-[17.5px]"
@@ -60,11 +60,12 @@
         </nav>
     </header>
     <main>
-        <div class="h-screen flex flex-auto items-center">
-            <div class="grid grid-cols-6 gap-6 text-start p-20">
+        <div class="flex flex-auto items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-6 gap-6 text-start p-20">
                 <div class="col-span-1 bg-cover bg-no-repeat bg-center rounded overflow-hidden aspect-[10/16] lazy"
                     data-src="imgs/00_lz.jpg" style="background-image: url(imgs/00_lz.jpg);"></div>
-                <div class="col-span-2 text-xs text-pretty">Lia Zinngrebe is an architect and urban planner engaged in
+                <div class="col-span-1 sm:col-span-2 text-xs text-pretty">Lia Zinngrebe is an architect and urban
+                    planner engaged in
                     public space, mobility, and participation with <span
                         class="underline hover:text-[#4A7B65] duration-500"><a href="https://www.urbanista.ch"
                             target="_blank">urbanista.ch</a></span> in Zurich. She completed her architectural studies
@@ -80,8 +81,8 @@
             </div>
         </div>
     </main>
-    <footer class="fixed bottom-0 left-0 w-full mx-auto text-[8px] font-thin">
-        <div class="flex flex-row justify-left pt-24 py-6 px-20">
+    <footer class="sm:fixed bottom-0 left-0 w-full mx-auto text-[8px] font-thin">
+        <div class="flex flex-row justify-center sm:justify-start pt-24 py-6 px-20">
             <!-- credits -->
             <div class="text-[#FBD3E4]">Made with
                 <span class="text-red-400 animate-pulse">&#9829;</span>
