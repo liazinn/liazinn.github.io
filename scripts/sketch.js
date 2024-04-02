@@ -29,6 +29,10 @@ function setup()
     describe('A dark-green canvas with bubbles in changing shades of lighter green that move like in a lava lamp affected by time.');
 }
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
+
 function draw()
 {
     background("#1D5A3E");
