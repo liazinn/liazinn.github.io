@@ -127,6 +127,7 @@ function draw()
             switch(config) {
                 case 0:
                     line();
+                    stroke("#4A7B65");
                     break;
                 case 1:
                     line(pt3.x, pt3.y, pt4.x, pt4.y);
